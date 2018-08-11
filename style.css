@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900');
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/calc-background.jpg');
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    background-color: #dbdbdb;
+    width: 25%;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 2px 2px 15px #00000038;
+}
+
+.top {
+    text-align: right;
+    padding: 15px;
+    background-color: #111111;
+    color: #fff;
+    height: 150px;
+}
+
+.btn,
+.equallbtn,
+.deleteAllbtn,
+.deletebtn,
+.color-switch,
+.historyBtn {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 22px 0;
+    background: #262626;
+    border: 1px solid #333;
+    color: #908f8f;
+    cursor: pointer;
+}
+
+.display-result {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.result {
+    padding-bottom: 5px;
+    font-size: 40px;
+}
+
+.display-calculation {
+    font-weight: 400;
+}
+
+.bottom b {
+    color: #fff !important;
+}
+
+.digit:hover {
+    background: #353535;
+    color: #fff;
+}
+
+.blue-color-bottom {
+    background: #337ab7;
+    color: #fff;
+    border: 1px solid #266ba6;
+}
+
+.blue-color-top {
+    background: #64a5dd;
+    color: #fff;
+    border: 1px solid #266ba6;
+}
+
+.blue-color-bottom:hover {
+    background: #4089c7;
+}
+
+.color-switch {
+    font-weight: 400;
+    color: #fff;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
+
+@media screen and (max-width:480px) {
+    .container {
+        width: 90%;
+        left: 20px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:1024px) {
+    .container {
+        width: 60%;
+        left: 20%;
+    }
+}
