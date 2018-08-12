@@ -227,6 +227,7 @@ var controller = (function (calcCtrl, UICtrl) {
             vlueEntr = calcCtrl.addCurrentNumber(valueEntered)
             arrRtn = calcCtrl.arrRtn()
             UICtrl.addItem(arrRtn)
+            UICtrl.deleteResult()
         } else if (e.keyCode === 13) {
             arrRtn = calcCtrl.arrRtn()
             resltHistory = UICtrl.displayResult(arrRtn)
@@ -253,7 +254,7 @@ var controller = (function (calcCtrl, UICtrl) {
 
         if(e.keyCode === 46 && e.ctrlKey === true){
             calcCtrl.resetData()
-            //calcCtrl.historyresetData()
+            // calcCtrl.historyresetData()
             UICtrl.deleteResult()
             UICtrl.deleteDisplayResult()
         }
@@ -284,7 +285,6 @@ var controller = (function (calcCtrl, UICtrl) {
 
     var deleteAllbtn = function () {
         calcCtrl.resetData()
-        //calcCtrl.historyresetData()
         UICtrl.deleteResult()
         UICtrl.deleteDisplayResult()
     }
