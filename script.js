@@ -253,7 +253,7 @@ var controller = (function (calcCtrl, UICtrl) {
 
         if(e.keyCode === 46 && e.ctrlKey === true){
             calcCtrl.resetData()
-            calcCtrl.historyresetData()
+            //calcCtrl.historyresetData()
             UICtrl.deleteResult()
             UICtrl.deleteDisplayResult()
         }
@@ -284,7 +284,7 @@ var controller = (function (calcCtrl, UICtrl) {
 
     var deleteAllbtn = function () {
         calcCtrl.resetData()
-        calcCtrl.historyresetData()
+        //calcCtrl.historyresetData()
         UICtrl.deleteResult()
         UICtrl.deleteDisplayResult()
     }
